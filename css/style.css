@@ -1,0 +1,164 @@
+:root {
+    --primary-orange: #ff6000;
+    --primary-red: #ef4035;
+    --primary-grey: #ccc;
+    --primary-black:#111;
+}
+img {
+    width: 3rem;
+    height: 3rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.logo-title {
+    color: var(--primary-orange);
+    font-size: 1.5rem;
+}
+
+
+
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+small {
+    font-size: 1.5rem;
+}
+.navbar-menu {
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-grey);
+    border-bottom: 1px solid var(--primary-grey);
+}
+.navbar-list {
+    align-items: center;
+    list-style: none;
+    display: none;
+    margin: .5rem 0;
+}
+.navbar-link {
+    color: var(--primary-black);
+    font-weight: 500;
+    transition: all .3s cubic-bezier(1, 0, 0, 1);
+}
+.navbar-link:hover {
+    color: var(--primary-orange);
+}
+.hamburger-icon {
+    display: inline-flex;
+    flex: 0 0 auto;
+    /* ? */
+    width: 8.33333333%;
+    font-size: 1.5rem;
+}
+.navbar-social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: .5rem 0;
+    padding: 0;
+    flex: 0 0 auto;
+    width: 25%;
+}
+a {
+    text-decoration: none;
+}
+.navbar-list > li,
+.navbar-social > li 
+{
+    margin-right: 1rem;
+}
+i {
+    color: var(--primary-orange);
+}
+
+
+
+
+h3 {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.post-item {
+    margin-bottom: 3rem;
+    flex: 0 0 auto;
+    width: 83.333333%;
+}
+.post-title {
+    color: var(--primary-red);
+}
+.post-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.post-text {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+
+
+
+/* Breakpoints */
+
+@media (min-width: 576px) {    
+}
+@media (min-width: 768px) {   
+}
+@media (min-width: 992px) {
+    .navbar-list {
+        display: inline-flex;
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+    .hamburger-icon {
+        display: none;
+    }
+    .navbar-social {
+        padding: 0 .5rem;
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+    h2 {
+        font-size: 3rem;
+        line-height: 1.5rem;
+        height: 4rem;
+        margin-bottom: 2rem;
+    }
+    small {
+        font-size: 2rem;
+    }
+    .post {
+        justify-content: space-between;
+    }
+    .post-item {
+        margin-bottom: 1rem;
+        flex: 0 0 auto;
+        width: 33.333333%;
+        padding: 0 16px;
+    }
+}
+@media (min-width: 1200px) {   
+}
+@media (min-width: 1400px) {   
+}
